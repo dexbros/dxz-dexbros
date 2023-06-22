@@ -1,0 +1,113 @@
+.user_container {
+  border: 1px solid var(--greyText);
+  margin-top: var(--spacing);
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  padding: var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_image_container {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.profile_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.posted_name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0px 8px;
+}
+.post_username {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: var(--greyText);
+}
+.user_info_container {
+  width: 100%;
+}
+.user_component {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 1px solid red; */
+  padding: var(--spacing);
+}
+.__user_card {
+  border: 1px solid var(--greyText);
+  padding: var(--spacing);
+  margin: 12px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.follower_profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.__user_card_name {
+  font-weight: 600;
+  font-size: 0.885rem;
+  padding: 0px 10px;
+}
+.__user_card_username {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--greyText);
+}
+.follow_btn {
+  border: 1px solid var(--blue);
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  border-radius: 7px;
+  color: white;
+  background-color: var(--blue);
+}
+
+
+/* New User card CSS */
+.user_list_card {
+  border: 1px solid rgb(185, 185, 185);
+  padding: 12px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.user_card_userInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.card_user_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.card_user_name {
+  padding: 0 8px;
+  font-weight: 500;
+}
+.card_user_username {
+  color: rgb(175, 175, 175);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.follow_followed_btn {
+  background-color: royalblue;
+  color: white;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  border-radius: 7px;
+}

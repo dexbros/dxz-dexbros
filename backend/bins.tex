@@ -1,0 +1,249 @@
+## User Table ##
+
+u_id: user id
+email: user email,
+password: user password
+isVerified: is user profile verified
+log_un: Log username
+handleUn: User handle username
+fn:  First name
+ln: user last name ,
+p_i: User profile picture,
+coverPic: User profile cover picture
+p_bio: Profile bio
+gndr: Profile Gender
+dob: Profile user Date of birth
+s_t: User search term
+toa: Type of account
+c_p: Create profile date
+flw_c: Profile Following count
+flwr_c: Profile Followers count
+u_status: User status,
+
+
+## User Meat table ##
+u_id: user id
+handleUn: User handle username
+flw: User Following list
+flwr: User Followers List
+own_grp: User Own block group
+mem_grp: User Memeber block group
+posts: User posts array to hold post id
+mentions: Mentions post id
+likes: User likes array to hold post id
+dislikes: User dislikes array to hold post id
+haha: User haha array to hold post id
+love: User love array to hold post id
+          
+
+## POST TABLE ##
+"o_p_id": original post id
+"content": original post content
+"image": original post content
+"gif": original post content
+"l_c":  like count
+"book": bookmark post array;
+"pinned": pinned status
+"u_id":  original post user id
+"u_fn": original post user first name
+"u_ln":  original post user last name
+"u_dun": original post user handleUsername
+"u_img":original post user profile image
+"hide":  post hide array
+"s_c":  post spam count
+"postOf":  define what type of post (ex normal post news post informative post)
+"is_share": if is_share>0 then it's a share post otherwise normal post
+"s_u_id":  share post user id
+"s_u_fn", share post user first name
+"s_u_ln", share post user last name
+"s_u_dun", share post user handleUser name
+"s_u_img", share post user profile picture
+"s_content", share post with quote,
+"c_t": create post timestamp
+"u_t": create post timestamp
+
+
+## POST META TABLE ##
+"p_id": original post id
+"likes":  Post likes array
+"dislikes": post dislikes array
+"haha":  Post haha array
+"angry": Post angry array
+"party": Post party array
+"spam": post spam array
+"share", post share array
+"analytics": Post analytics list
+"cmnts": post comments share array
+
+
+## Trending Table ##
+"p_k": Primary key
+"p_c": Post count
+"p_l": Holding post id
+
+
+## Post Comment ##
+"id": Comment id
+"comment": Comment text
+  "gif": comment gif,
+"l_c": comment like count
+"d_c": comment dislike count
+"s_c": Comment share count
+hide: Comment hide array
+"c_t": Comment create time 
+"u_t": Comment update time           
+"c_fn": Comment creator first name
+"c_ln": Comment creator last name
+"c_u_du": Comment creator handle username
+ "c_u_img": Comment creator profile picture
+"pinn", Comment pinned = 1 pin otherwiser pinn =0 
+"delete": is comment is deleted
+"reply_c": comment reply count 
+"postId": Original post id
+"img": comment image public url
+
+
+## post comment meta table ##
+"id": comment id
+"likes": comment likes array
+"dislikes": : comment dislikes array
+"haha": comment haha array
+"angry": comment angry array
+"spam": comment spam array
+
+
+## post comment rteply ##
+"id": comment id 
+"content": post content text
+"l_c": post like count
+"d_c": post dislike count
+"s_c": post spam count
+"r_u_fn": comment creator user first name
+r_u_ln": comment cretor user last name
+"r_u_dun" comment cretor : user handle username
+"r_u_pic": comment cretor  user profile picture
+"cmntId":  comment id (index)
+"delete": Comment reply is delete or not
+
+
+## Block Table ##
+"g_id": Group id
+"g_n": Block name
+"g_p_img": Group profile image url link
+"g_c_img": Group cover image url link
+"g_c_fn": : Group Creator first name
+"g_c_ln": : Group Creator last name
+"g_c_dun": : Group Creator handle user name
+"g_c_id": : Group Creator id
+"g_bio": Group bio
+"g_mem": Group members lists
+"hide": group hide members,
+"visitors": Group visitors count
+"unique_v": Group unique visitors count
+"admins": Group admins array
+"g_type" : Grooup Type
+"tod": Type of block
+"symbol": Block symbol
+
+
+## Block meta table ##
+"g_id": Group ID
+"posts": Group posts array
+"events": Group events array
+"visitors": group visitors array
+"unique_v":  group unique visitors array
+
+
+## Block seacrh table ##
+"b_id": Group ID
+"b_n"Group name
+"b_m": Block members count
+"g_c_dun" : Block/Group creator  handle user name
+"b_t": Block type
+"g_p_img": Block profile picture
+"s_t": Block/Group Search term,
+"g_bio": Block/Group Bio details'
+
+
+## Block Post ##
+"p_id": Block post id
+"likes": group post likes count
+ "book" group post bookmark
+"pinned": group post pinned
+"content": Group post content
+"gif": Group post gif
+"u_id", group post userID
+"u_fn", group post first name
+"u_ln", group post lastname
+"u_dun", group post user handle username
+"u_img", group post user profile picture
+"hide": group post hide
+"timestamp": group post timestamp hide
+"spam":  //post spam count
+"c_t" : Group post create time
+"u_t" : Group post updated time
+"comments": post comment list
+"url": Comment url link
+"group_id": Group id
+"shares": post share count
+"isEvent",: Group ppost is Event
+"isReposted": Group ppost is reposted
+"deleted": : Group ppost is deleted
+"c_c",: : Group ppost comment count
+ "l_c": Group ppost is like count
+"image": : Group ppost image link
+
+## Block post Meta ##
+"p_id": Block post id
+"heart": Block/Group post heart
+"haha": Block/Group post haha
+"angry"Block/Group post argry
+"dislikes"Block/Group post dislikes
+"spam": Block/Group post spam
+"share": Block/Group post heart shares
+
+
+## Block post comment ##
+"c_id": comment id
+"comment": Comment text
+"image": Comment image link
+"postID": Comment postID 
+"l_c": Comment  Like count
+"d_c": Comment  Dislike count
+"s_c": Comment Spam count
+"reply": Comment Reply list
+"hide": Comment  Hide list
+"pinn": Comment Pinn comment
+"delete": Comment Delete comment
+"timestamp": group post timestamp hide
+"c_t":  Comment timestamps
+"u_t": Comment update timestamps
+"c_fn": Comment creator first name
+"c_ln": Comment creator last name
+"c_pic": Comment creator profile picture
+"c_handleUn": "c_fn": Comment creator handleUsername
+
+
+## Block comment meta ##
+"c_id": comment id
+"like": Comment  Like array
+"dislikes": Comment  Dislike array
+"spam""like": Comment Spam array
+
+
+
+## Blockcomment reply ##
+"r_id": Comment reply id
+"content": Comment reply content
+"likes": reply likes
+"dislikes": reply dislikes
+"spam,: : reply spam,
+"c_t": Reply create timestamps
+"delete": reply delete
+"c_fn": reply user first name
+"c_ln": reply user last name
+"c_pi": reply user  user profile pic
+"c_un": reply user handleUser name
+"cmnt_id": reply user comment id
+
+

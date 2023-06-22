@@ -1,0 +1,23 @@
+{
+    "post":"Post",
+    "reply":"Reply",
+    "placeholder":"What's happening?",
+    "betslip__systemSelectionErr":"Cannot add more than 3 in a System Bet",
+    "betslip__parlaySelectionErr":"Cannot add more than 8 in a Multi Bet",
+    "betslip__singleSelectionErr":"Cannot add more than 10 in a Single Bet",
+    "betslip__multiCategoryErr":"Cannot add same category bets in a Multi Bet",
+    "betslip__systemCategoryErr":"Cannot add same game bets in a System Bet",
+    "betslip__oddsMatchErr":"One of the odds has changed",
+    "betslip__disabledEvent":"Bet not allowed! This event is temporarily disabled",
+    "betslip__disabledCategory":"Bet not allowed! This category is temporarily disabled",
+    "betslip__globalMaxBet": "Your stake is more than maximum bet limit of",
+    "betslip__globalMinBet":"Your stake is less than minimum bet limit of",
+    "betslip__globalMaxWin": "Maximum win allowed is",
+    "betslip__globalMinWin": "Minimum win allowed is",
+    "betslip__userMaxBet": "Your account is restricted to maximum bet of",
+    "betslip__userMinBet":"Your account is restricted to minimum bet of",
+    "betslip__userMaxWin":"Your account is allowed to win maximum of",
+    "betslip__couldNotSubmit": "Could not submit your bet at the moment",
+    "betslip__exceededUserBonus":"Your stake is higher than available bonus of",
+    "betslip__exceededUserBalance": "Your stake is higher than available balance of"
+}

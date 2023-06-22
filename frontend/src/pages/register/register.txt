@@ -1,0 +1,196 @@
+/** @format */
+
+import React from "react";
+import { connect } from "react-redux";
+import "./register.css";
+import { Link } from "react-router-dom";
+import { userLogin } from "../../redux/user/user.actions";
+
+import { useNavigate } from "react-router-dom";
+import { handleRegisterUser } from "../../Apis/Register";
+
+const Register = ({ login }) => {
+  const { navigate } = useNavigate();
+  const [email, setEmail] = React.useState("");
+  const [handleUn, setHandleUn] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [cpassword, setCPassword] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [isDisable, setIsDisable] = React.useState(true);
+  const [showMsg, setShowMsg] = React.useState(false);
+  const [msg, setMsg] = React.useState("");
+
+  React.useEffect(() => {
+    if (
+      !email.trim() ||
+      !handleUn.trim() ||
+      !password.trim() ||
+      !cpassword.trim()
+    ) {
+      setIsDisable(true);
+    } else {
+      setIsDisable(false);
+      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        setIsDisable(true);
+        setShowMsg(true);
+        setIsDisable("Invalid email");
+      } else {
+        setIsDisable(false);
+        if (password !== cpassword) {
+          setShowMsg(true);
+          setIsDisable(true);
+          setMsg("Password and confirm password did not match");
+        } else {
+          setShowMsg(false);
+          setIsDisable(false);
+        }
+      }
+    }
+  }, [email, handleUn, password, cpassword]);
+
+  // *** Handle Register
+  const handleRegister = async () => {
+    setIsLoading(true);
+    handleRegisterUser(email, password, handleUn)
+      .then((result) => {
+        console.log("***", result);
+        setShowMsg(true);
+        setMsg(result.msg);
+        setIsLoading(false);
+        setEmail("");
+        setHandleUn("");
+        setPassword("");
+        setCPassword("");
+        setIsDisable(true);
+        setMsg(result.msg);
+
+        
+        login(result.user, result.token);
+        if (result.user && result.token) {
+          return navigate("/");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsLoading(false);
+        setEmail("");
+        setPassword("");
+        setCPassword("");
+        setIsDisable(true);
+      });
+
+    // var myHeaders = new Headers();
+    // myHeaders.append("Content-Type", "application/json");
+
+    // var raw = JSON.stringify({
+    //   email: email,
+    //   password: password,
+    //   username: handleUn,
+    // });
+
+    // var requestOptions = {
+    //   method: "POST",
+    //   headers: myHeaders,
+    //   body: raw,
+    //   redirect: "follow",
+    // };
+
+    // fetch(`${process.env.REACT_APP_URL_LINK}register`, requestOptions)
+    //   .then((response) => response.json())
+    //   .then((result) => {
+    //     setShowMsg(true);
+    //     setMsg(result.msg);
+    //     setIsLoading(false);
+    //     setEmail("");
+    //     setHandleUn("");
+    //     setPassword("");
+    //     setCPassword("");
+    //     setIsDisable(true);
+    //     setMsg(result.msg);
+    //     login(result.user, result.token);
+    //     if (result.user && result.token) {
+    //       return navigate("/");
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     console.log("error", error);
+    //     setIsLoading(false);
+    //     setEmail("");
+    //     setPassword("");
+    //     setCPassword("");
+    //     setIsDisable(true);
+    //   });
+  };
+
+  return (
+    <div className='__registerPage'>
+      <div className='register_form_section'>
+        <div className='register_form_header_section'>
+          <div className='register_form_header_text'>SignUp</div>
+          {showMsg && <div className='register_form_error_msg'>{msg}</div>}
+        </div>
+
+        <div className='register_form_section'>
+          {/* Email address */}
+          <input
+            type='email'
+            placeholder='Entar Email'
+            className='__input_field'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+
+          {/* Handle username */}
+          <input
+            type='text'
+            placeholder='Entar Handle Username'
+            className='__input_field'
+            value={handleUn}
+            onChange={(e) => setHandleUn(e.target.value)}
+          />
+
+          {/* password */}
+          <input
+            type='password'
+            placeholder='Entar Password'
+            className='__input_field'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+
+          {/* confirm password */}
+          <input
+            type='password'
+            placeholder='Entar Confirm Password'
+            className='__input_field'
+            value={cpassword}
+            onChange={(e) => setCPassword(e.target.value)}
+          />
+        </div>
+
+        <div className='auth_btn_container'>
+          {!isDisable && (
+            <button className='__logibn_btn' onClick={handleRegister}>
+              {isLoading ? (
+                <span class='icon-loading spinner'></span>
+              ) : (
+                <>Register</>
+              )}
+            </button>
+          )}
+        </div>
+
+        <div className='register_links_section'>
+          <Link to='/' className='__login_link'>
+            Already have an account?
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  login: (user, token) => dispatch(userLogin(user, token)),
+});
+export default connect(null, mapDispatchToProps)(Register);

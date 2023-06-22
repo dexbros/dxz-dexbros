@@ -1,0 +1,22 @@
+/** @format */
+
+.down_navbar_container {
+  z-index: 1px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.down_nav_brn {
+  line-height: 0px;
+}
+.down_nav_btn_icon {
+  width: 25px;
+  height: 25px;
+  fill: black;
+}
+.down_nav_icon_text {
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}

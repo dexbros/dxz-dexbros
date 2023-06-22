@@ -1,0 +1,301 @@
+async emojiLikePost(req, res, next) {
+    const id = req.params.id;
+    const client = await getAerospikeClient();
+    // console.log(req.params.id);
+    if (!id) {
+      return res.status(400).json({ msg: "Invalid request" });
+    } else {
+      const post_key = new Aerospike.Key(
+        process.env.CLUSTER_NAME,
+        process.env.SET_POSTS,
+        id
+      );
+      const post_meta_key = new Aerospike.Key(
+        process.env.CLUSTER_NAME,
+        process.env.SET_POSTS_META,
+        id
+      );
+
+      const post = await client.get(post_key);
+      // *** save notification data
+      const map_key = new Aerospike.Key(
+        process.env.CLUSTER_NAME,
+        process.env.SET_APP_HISTORY,
+        post.bins.u_dun
+      );
+      var notificationData = {
+        id: id,
+        ty: 1,
+        vi: false,
+        wo: req.user.handleUn,
+        ti: Date.now(),
+        nm: `${req.user.fn} ${req.user.ln}`,
+        pi: req.user.p_i,
+        cat: 1,
+        re: post.bins.u_dun,
+      };
+
+      if (post.bins.u_dun !== req.user.handleUn) {
+        const map_ops = [
+          Aerospike.operations.write("n_id", post.bins.u_dun),
+          Aerospike.maps.put("notification", Date.now(), notificationData, {
+            order: maps.order.KEY_ORDERED,
+          }),
+          Aerospike.operations.incr("count", 1),
+        ];
+        let result = await client.operate(map_key, map_ops);
+      }
+      if (post.bins.l_c > 0) {
+        console.log("Like count is not 0");
+        const meta = await client.get(post_meta_key);
+        if (meta.bins.likes.includes(req.user.handleUn)) {
+          const ops = [
+            Aerospike.lists.removeByValue("likes", req.user.handleUn),
+          ];
+          client.operate(post_meta_key, ops, (err, result) => {
+            if (err) {
+              return res.status(400).json({ msg: err.message });
+            } else {
+              const ops = [Aerospike.operations.incr("l_c", -1)];
+              client.operate(post_key, ops, async (err, result) => {
+                if (err) {
+                  return res.status(400).json({ msg: err.message });
+                } else {
+                  if (meta.bins.likes.length === 1) {
+                    const ops = [Aerospike.operations.incr("like", -1)];
+                    const data = await client.operate(post_key, ops);
+                    return res.status(200).json({ msg: "remove Liked post" });
+                  } else {
+                    return res.status(200).json({ msg: "remove Liked post" });
+                  }
+                }
+              });
+            }
+          });
+        } else {
+          if (
+            meta.bins.haha.includes(req.user.handleUn) ||
+            meta.bins.angry.includes(req.user.handleUn) ||
+            meta.bins.dislikes.includes(req.user.handleUn)
+          ) {
+            console.log("Not like Other");
+            const ops = [
+              Aerospike.lists.removeByValue("haha", req.user.handleUn),
+              Aerospike.lists.removeByValue("angry", req.user.handleUn),
+              Aerospike.lists.removeByValue("dislikes", req.user.handleUn),
+            ];
+            client.operate(post_meta_key, ops, (err, result) => {
+              if (err) {
+                return res.status(400).json({ msg: err.message });
+              } else {
+                const ops = [
+                  Aerospike.lists.append("likes", req.user.handleUn),
+                ];
+                client.operate(post_meta_key, ops, async (err, result) => {
+                  if (err) {
+                    return res.status(400).json({ msg: err.message });
+                  } else {
+                    // return res.status(200).json({ msg: "You liked this post" });
+                    if (meta.bins.likes.length === 0) {
+                      const ops = [Aerospike.operations.incr("like", 1)];
+                      const data = await client.operate(post_key, ops);
+
+                      // return res.status(200).json({ msg: "Liked post" });
+                      if (post.bins.u_dun === req.user.handleUn) {
+                        return res.status(200).json({ msg: "Liked post" });
+                      } else {
+                        return res
+                          .status(200)
+                          .json({ msg: "Liked post", notificationData });
+                      }
+                    } else {
+                      if (post.bins.u_dun === req.user.handleUn) {
+                        return res
+                          .status(200)
+                          .json({ msg: "Liked post", notificationData });
+                      } else {
+                        return res
+                          .status(200)
+                          .json({ msg: "Liked post", notificationData });
+                      }
+                    }
+                  }
+                });
+              }
+            });
+          } else {
+            console.log("Not previouly reacted");
+            const ops = [Aerospike.lists.append("likes", req.user.handleUn)];
+            client.operate(post_meta_key, ops, (err, result) => {
+              if (err) {
+                return res.status(400).json({ msg: err.message });
+              } else {
+                const ops = [Aerospike.operations.incr("l_c", 1)];
+                client.operate(post_key, ops, async (err, result) => {
+                  if (err) {
+                    return res.status(400).json({ msg: err.message });
+                  } else {
+                    if (meta.bins.likes.length === 0) {
+                      const ops = [Aerospike.operations.incr("like", 1)];
+                      const data = await client.operate(post_key, ops);
+                      // return res.status(200).json({ msg: "Liked post" });
+                      if (post.bins.u_dun === req.user.handleUn) {
+                        consople.log("post owner");
+                        return res.status(200).json({ msg: "Liked post" });
+                      } else {
+                        if (req.user.flwr_c > 2) {
+                          console.log("Popular");
+                          if (post.bins.pop.length <= 2) {
+                            const ops = [
+                              Aerospike.lists.append("pop", {
+                                handleUn: req.user.handleUn,
+                                pic: req.user.p_i || "",
+                              }),
+                            ];
+                            const data = await client.operate(post_key, ops);
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          } else {
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          }
+                        } else {
+                          console.log("Non Popular");
+                          if (post.bins.ran.length <= 2) {
+                            const ops = [
+                              Aerospike.lists.append("ran", {
+                                handleUn: req.user.handleUn,
+                                pic: req.user.p_i || "",
+                              }),
+                            ];
+                            const data = await client.operate(post_key, ops);
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          } else {
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          }
+                        }
+                      }
+                    } else {
+                      // return res.status(200).json({ msg: "Liked post" });
+                      if (post.bins.u_dun === req.user.handleUn) {
+                        return res.status(200).json({ msg: "Liked post" });
+                      } else {
+                        if (req.user.flwr_c > 2) {
+                          console.log("Popular");
+                          if (post.bins.pop.length <= 2) {
+                            const ops = [
+                              Aerospike.lists.append("pop", {
+                                handleUn: req.user.handleUn,
+                                pic: req.user.p_i || "",
+                              }),
+                            ];
+                            const data = await client.operate(post_key, ops);
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          } else {
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          }
+                        } else {
+                          console.log("Normal");
+                          if (post.bins.ran.length <= 2) {
+                            const ops = [
+                              Aerospike.lists.append("ran", {
+                                handleUn: req.user.handleUn,
+                                pic: req.user.p_i || "",
+                              }),
+                            ];
+                            const data = await client.operate(post_key, ops);
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          } else {
+                            return res
+                              .status(200)
+                              .json({ msg: "Liked post", notificationData });
+                          }
+                        }
+                      }
+                    }
+                  }
+                });
+              }
+            });
+          }
+        }
+      } else {
+        console.log("Like count 0");
+        const ops = [Aerospike.lists.append("likes", req.user.handleUn)];
+        client.operate(post_meta_key, ops, (err, result) => {
+          if (err) {
+            return res.status(400).json({ msg: err.message });
+          } else {
+            const ops = [Aerospike.operations.incr("l_c", 1)];
+            client.operate(post_key, ops, async (err, result) => {
+              if (err) {
+                return res.status(400).json({ msg: err.message });
+              } else {
+                // return res.status(200).json({ msg: "Liked post" });
+                // ***
+
+                const postUpdates = {
+                  postId: id,
+                  postLikeCount: 5,
+                };
+                console.log(postUpdates);
+                if (post.bins.u_dun === req.user.handleUn) {
+                  return res.status(200).json({ msg: "Liked post" });
+                } else {
+                  // const notiData = await client.get(map_key);
+                  if (req.user.flwr_c > 2) {
+                    if (post.bins.pop.length <= 2) {
+                      const ops = [
+                        Aerospike.lists.append("pop", {
+                          handleUn: req.user.handleUn,
+                          pic: req.user.p_i || "",
+                        }),
+                      ];
+                      const data = await client.operate(post_key, ops);
+                      return res
+                        .status(200)
+                        .json({ msg: "Liked post", notificationData });
+                    } else {
+                      return res
+                        .status(200)
+                        .json({ msg: "Liked post", notificationData });
+                    }
+                  } else {
+                    console.log("Normal **");
+                    if (post.bins.ran.length <= 2) {
+                      const ops = [
+                        Aerospike.lists.append("ran", {
+                          handleUn: req.user.handleUn,
+                          pic: req.user.p_i || "",
+                        }),
+                      ];
+                      const data = await client.operate(post_key, ops);
+                      return res
+                        .status(200)
+                        .json({ msg: "Liked post", notificationData });
+                    } else {
+                      return res
+                        .status(200)
+                        .json({ msg: "Liked post", notificationData });
+                    }
+                  }
+                }
+              }
+            });
+          }
+        });
+      }
+    }
+  }

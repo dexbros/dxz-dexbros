@@ -1,0 +1,40 @@
+.profile_media_container {
+  /* border: 1px solid red; */
+  min-height: 20vh;
+}
+.media_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.media {
+  /* border: 1px solid red; */
+  /* position: relative; */
+  width: 300px;
+  height: 190px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7px;
+  border-radius: 7px;
+}
+.media_content {
+  width: 300px;
+  height: 190px;
+  /* border: 1px solid red; */
+  /* margin: 7px; */
+  position: relative;
+}
+.__image, .__video {
+  width: 300px;
+  height: 190px;
+  border-radius: 7px;
+}
+.view_btn {
+  /* border: 1px solid red; */
+  padding: 7px 15px;
+  border-radius: 7px;
+  background-color: #fdfdfd48;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}

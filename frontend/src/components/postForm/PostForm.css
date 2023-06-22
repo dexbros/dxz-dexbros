@@ -1,0 +1,152 @@
+.__postform_container {
+  width: 100%;
+  height: auto;
+  padding: var(--spacing);
+  /* border: 1px solid red; */
+}
+.post_form_header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.user_image_container, .profile_avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.__textarea_container {
+  width: 100% !important;
+  /* border: 1px solid red; */
+}
+.__textarea_field {
+  width: 100%;
+  padding: 5px;
+  resize: none;
+  border-radius: 5px;
+}
+.form_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon_btn {
+  padding: 12px;
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+}
+.post_submit_btn {
+  background-color: var(--blue);
+  width: 90px;
+  height: 35px;
+  border-radius: 7px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.post_submit_btn_disable {
+  background-color: var(--blueLight);
+  cursor: no-drop !important;
+}
+.file_input {
+  display: none !important;
+}
+.image_preview_container {
+  width: 400px;
+  height: 200px;
+  margin: 0px auto;
+  border-radius: 7px;
+  position: relative;
+}
+.image_preview {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+.close_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--blueLight);
+  /* color: white !important; */
+}
+.word_count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding-left: var(--spacing);
+}
+.dropdown_items {
+  /* border: 1px solid red; */
+  font-size: 0.88rem;
+  font-weight: 400;
+
+}
+.dropdown_item {
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.dropdown_item:hover {
+  background-color: rgb(239, 239, 239);
+}
+.dropdown_btn {
+  border: 1px solid rgb(227, 227, 227);
+  padding: 3px 12px;
+  border-radius: 2px;
+  color: black;
+  font-weight: 500;
+  font-size: 0.8rem;
+  width: 160px;
+  text-align: left !important;
+}
+.like_icon {
+  fill: crimson;
+}
+.file_icon_btn {
+  font-size: 1.4rem;
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.form_icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.post_form_footer {
+
+  display: flex;
+  align-items: center;
+}
+.error_msg {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: crimson;
+  padding-left: 7px;
+}
+.poll_container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 12px;
+}
+.poll_question_input {
+  width: 100%;
+  height: 38px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid rgb(177, 177, 177);
+  font-size: 0.85rem;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.input_label {
+  font-size: 0.985rem;
+  font-weight: 600;
+}

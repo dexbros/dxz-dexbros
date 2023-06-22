@@ -1,0 +1,29 @@
+.follower_following_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link_item {
+  list-style: none;
+  max-width: 450px;
+  width: 50%;
+  text-align: center;
+  padding: 7px;
+}
+.link_text {
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+.user_list_container {
+  /* border: 1px solid red; */
+  padding: 12px;
+}
+.empty_user_container {
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}

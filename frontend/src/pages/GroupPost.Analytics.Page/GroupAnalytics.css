@@ -1,0 +1,42 @@
+.analytics_page_container {
+  width: 100%;
+  height: auto;
+}
+.analytics_details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+.analytics_box {
+  border: 1px solid rgb(150, 150, 150);
+  width: 150px;
+  height: 150px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin: 3px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.analytics_title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: rgb(69, 69, 69);
+}
+.analytics_count {
+  line-height: 100px;
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+
+.pie_chart_container {
+  max-width: 450px;
+  width: 100%;
+  height: 450px;
+  margin: 10px auto;
+}

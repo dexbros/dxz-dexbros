@@ -1,0 +1,46 @@
+.tab_container {
+ width: 100%;
+ margin-top: var(--spacing);
+ display: flex;
+}
+.Tabs {
+  width: 100%;
+}
+.list_item {
+  width: 50%;
+  text-align: center;
+  padding: 12px 0px;
+  font-size: 0.885rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+.active_tab {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+.group_mem_link {
+  font-size: 0.885rem;
+  font-weight: 600;
+}
+.group_mem_link:hover {
+  text-decoration: underline;
+}
+.__list_item {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  justify-content: center;
+  cursor: pointer;
+}
+.__list_item_active {
+  border-bottom: 2px solid rgb(0, 135, 188);
+}
+.list_image {
+  width: 20px;
+  margin: 0 5px;
+}
+.tab_count {
+  font-weight: 600;
+}

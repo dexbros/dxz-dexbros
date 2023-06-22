@@ -1,0 +1,37 @@
+#primary qualification for badge only after email verification
+
+1. Normal => No badge
+
+2. Pro Users (Paid monthly subscription users) => Grey
+=> Eligiblity
+	1. Anytime as soon as user has started monthly subscription by paying 1000 coins/month
+
+3. Business => Yellow => Allowed only in block and blockcast
+=> Eligiblity
+	1. Monthly subscription of 1500 coins/month
+	
+4. Content Creators => Green
+=> Eligiblity
+	1. Minimum 500 followers
+	2. Minimum 15 days old account
+	3. Posted at least 64 posts
+	4. Completed 100% profile set up.
+	
+5. Celebrity/public figure => Blue => verified individual
+=> Eligibility
+	1. Self Application in reference to other social media verification. Manually done.
+	
+6. Miners => Purple => The one who can Mine coins with his social activities.
+=> Eligibility
+	1. At least 50k followers
+	2. Minimum 30 days old account
+	3. Posted at least 200 posts
+	4. Total public engagements of 10 million count
+	
+7. Burners => Red
+=> Eligibility
+	1. At least 50k followers
+	2. Minimum 30 days old account
+	3. Posted at least 200 posts
+	4. Total public engagements of 10 million count
+	

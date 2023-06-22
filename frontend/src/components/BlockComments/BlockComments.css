@@ -1,0 +1,49 @@
+.comment_card {
+  /* border: 1px solid red; */
+  max-width: 400px;
+  width: 100%;
+  margin: 12px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 12px;
+  border-radius: 7px;
+  background-color: #22a7b33e;
+}
+.block_owner_cmnt {
+  /* margin-left: 25%; */
+  background-color: #686de0;
+  color: aliceblue;
+  /* background-color: rgba(49, 89, 209, 0.288); */
+  /* color: aliceblue; */
+}
+.cmnt_username, .cmt_time {
+  padding: 0 5px;
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+.comment_card_header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.msg_user_info {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.comment_card_body {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.comment_card_body {
+  /* background-color: rgba(100, 148, 237, 0.129); */
+  border-radius: 7px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+.owner_cmnt_card_body {
+  color: aliceblue;
+}

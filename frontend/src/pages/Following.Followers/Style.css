@@ -1,0 +1,17 @@
+._profile_followers_tab_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 0.885rem;
+  font-weight: 500;
+}
+.active_tab {
+ color: var(--blue); 
+ border-bottom: 2px solid var(--blue);
+}
+.followers_tab_container {
+  width: 50%;
+  text-align: center;
+  padding: var(--spacing);
+  cursor: pointer;
+}

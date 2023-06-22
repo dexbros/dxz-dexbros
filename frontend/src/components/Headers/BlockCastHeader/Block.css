@@ -1,0 +1,35 @@
+.block_main_header {
+  border: 1px solid rgb(213, 212, 212);
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 7px;
+}
+.header_home_icon, .header_logo_icon {
+  width: 20px;
+  height: 20px;
+}
+.more_header_btn {
+  margin-right: 7px;
+}
+.header_icon_icon {
+  fill: aliceblue;
+}
+.header_logo_btn {
+  width: 90px;
+  height: 30px;
+  background-color: royalblue;
+  color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_list {
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 5px;
+}

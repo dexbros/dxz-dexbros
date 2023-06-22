@@ -1,0 +1,155 @@
+.replyContainer, .hide_msg_container {
+  /* border: 1px solid red; */
+  border-radius: 7px;
+  padding: 12px;
+  max-width: 300px;
+  width: 100%;
+  margin-left: 20px;
+  background-color: rgba(120, 248, 173, 0.112);
+  position: relative;
+}
+.reply_card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reply_card_user_info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.reply_user_name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0 5px;
+}
+.reply_user_username {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.392);
+}
+.reply_user_image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.reply_card_body {
+  padding: 12px 0;
+}
+.content {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.reply_user_tag {
+  border: 1px solid royalblue;
+  padding: 3px 10px;
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  width: fit-content;
+  background-color: royalblue !important;
+  font-size: 0.55rem;
+  font-weight: 400;
+  border-radius: 15px;
+  margin-right: 3px;
+}
+
+.reply_card_footer {
+  display: flex;
+  align-items: center;
+}
+.reply_like_btn, .reply_dislike_btn {
+  width: 60px;
+  height: 35px;
+  border-radius: 7px;
+  background-color: transparent !important;
+  color: black;
+  transition: 0.2s linear;
+  margin-right: 10px;
+}
+.reply_like_btn:hover {
+  color: crimson;
+  background-color: rgba(220, 20, 60, 0.142) !important;
+}
+.reply_dislike_btn:hover {
+  color: royalblue;
+  background-color: rgba(65, 105, 225, 0.236) !important;
+}
+.reply_msg {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.reply_to_username {
+  font-weight: 500;
+}
+.hide_msg_container {
+  background-color: rgba(73, 168, 250, 0.137) !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: crimson;
+}
+.unhide_button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: royalblue !important;
+  color: white;
+}
+
+.reply_pinned_icons {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.reply_liked {
+  color: crimson !important;
+}
+.reply_dislike {
+  color: royalblue;
+}
+.reply_input_container {
+  padding: 12px;
+  font-size: 0.85rem;
+} 
+.input_count {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.modal_reply_input {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 7px;
+  min-height: 100px;
+  resize: none;
+}
+
+.reply_emoji_btn {
+  color: black;
+}
+.reply_container {
+  /* border: 1px solid royalblue; */
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+.reply_user_link {
+  padding-left: 3px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: royalblue;
+}
+.reply_pinned_container {
+  position: relative;
+}
+.reply_pinn {
+  color: royalblue;
+  position: absolute;
+  top: -40px;
+  right: -12px;
+}
+.spam_reply_btn:hover {
+  color: royalblue;
+  background-color: rgba(65, 105, 225, 0.236) !important;
+}
+.spammed_icons {
+  color: royalblue
+}

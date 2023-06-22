@@ -1,0 +1,14 @@
+/** @format */
+
+const ActionTypes = {
+  NEW_REPLY: "NEW_REPLY",
+  UPDATE_REPLY: "UPDATE_REPLY",
+  DELETE_REPLY: "DELETE_REPLY",
+  REMOVE_ALL_REPLY: "REMOVE_ALL_REPLY",
+  ADD_NEW_REPLY: "ADD_NEW_REPLY",
+
+  SET_REPLIES: "SET_REPLIES",
+  ADD_REPLIES: "ADD_REPLIES",
+};
+
+export default ActionTypes;

@@ -1,0 +1,575 @@
+/** @format */
+
+.skeleton_profile_container {
+  width: 100%;
+  height: 100vh;
+  padding: 12px;
+}
+.skeleton_profile_image_section {
+  height: 30vh;
+  position: relative;
+}
+.skeleton_cover_image {
+  height: 30vh;
+}
+.skeleton_profile_image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -66px;
+  left: 7px;
+  border: 4px solid white;
+}
+.skeleton_profile_info_container {
+  margin-top: 70px;
+}
+.skeleton_text {
+  width: 200px;
+  height: 10px;
+  margin: 7px 0;
+  border-radius: 5px;
+}
+.search_skeleton_card {
+  padding: 10px;
+  margin: 7px 0;
+}
+.skeleton_card_header {
+  width: 65%;
+  height: 20px;
+  margin: 7px 0;
+  border-radius: 10px;
+}
+.skeleton_card_line {
+  width: 100%;
+  height: 12px;
+  border-radius: 10px;
+}
+.full_post_loader_conteiner {
+  width: 100%;
+}
+.skeleton_post {
+  height: 30vh;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.skeleton_post_comment {
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+  height: 12vh;
+}
+.event_loading_header {
+  padding: 7px;
+}
+.skeleton_header_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.skeleton_event_image {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.skeleton_nameloader {
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+}
+.skeleton_event_body {
+  height: 175px;
+  padding: 5px;
+}
+.skeleton_event_inner_body {
+  height: 100%;
+  border-radius: 5px;
+}
+.skeleton_loader_card {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 7px;
+}
+.skeleton_color {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    rgb(221, 221, 221);
+  animation: shine 1.5s linear infinite;
+  background-position-x: 180%;
+}
+@keyframes shine {
+  to {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, 0) 80%
+      ),
+      rgb(255, 255, 255);
+    animation: shine 1s infinite;
+    background-position: 0 0;
+  }
+}
+.loader_profile_seetings_section {
+  width: 100%;
+  height: 92.5vh;
+}
+.loader_profile_seetings_tab {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.__loader_tab {
+  width: 23%;
+  height: 18px;
+  border-radius: 15px;
+}
+.loader_profile_box {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.loader_profile_settings_header {
+  width: 75%;
+  height: 20px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+}
+.loader_profile_settings_subheader {
+  width: 100%;
+  height: 12px;
+  margin-bottom: 4px;
+  border-radius: 12px;
+}
+
+.skeleton_nested_routes {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skeleton_route_one {
+  width: 230px;
+  height: 17px;
+  border-radius: 5px;
+}
+.skeleton_profile_posts {
+  padding: 12px;
+}
+.skeleton_post_one {
+  width: 100%;
+  height: 50px;
+  margin: 7px 0;
+  border-radius: 7px;
+}
+
+.profile_edit_skeleton {
+  width: 100%;
+  height: 100vh;
+  padding: 12px;
+}
+.skeleton_header {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+.box_text_section {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.skeleton_title {
+  width: 110px;
+  height: 20px;
+  border-radius: 5px;
+}
+.skeleton_text {
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+}
+.skeleton_edit_box1 {
+  margin-bottom: 7px;
+}
+.skeleton_box_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px 0;
+}
+.skeleton_box {
+  height: 15px;
+  width: 100px;
+  border-radius: 5px;
+}
+.badge_secleton_container {
+  width: 100%;
+  height: 100vh;
+}
+.skeleton_header_box {
+  margin: 5px;
+  padding: 5px;
+}
+.badge_skeleton_header {
+  width: 100%;
+  height: 48px;
+  margin: 10px 0;
+}
+.badge_skeleton_box {
+  width: 100%;
+  height: 20px;
+  margin: 5px 0;
+}
+.badge_skeleton_footer {
+  height: 48px;
+  margin: 10px;
+}
+.skeleton_blockcast_container {
+  width: 100%;
+  height: 87.5vh;
+  padding: 12px;
+}
+.block_cast_skeleton_list {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.skeleton_one {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+}
+
+.skeleton_group_post_container {
+  width: 100%;
+  height: 87vh;
+  margin: 5px 0;
+}
+.skeleton_group_post_card {
+  border: 1px solid rgb(192, 192, 192);
+  margin: 5px 0;
+  padding: 10px;
+}
+.skeleton_group_post_header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.skeleton_post_user_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.skeleton_group_post_user_info {
+  width: 100%;
+  height: auto;
+}
+.skeleton_box_one {
+  display: flex;
+  align-items: center;
+}
+.skeleton_post_user_name {
+  max-width: 120px;
+  width: 100%;
+  height: 20px;
+  border-radius: 12px;
+}
+.skeleton_post_user_username {
+  max-width: 50px;
+  width: 100%;
+  height: 10px;
+  border-radius: 12px;
+  margin: 0px 5px;
+}
+.skeleton_post_details {
+  margin: 5px 0;
+  width: 150px;
+  height: 10px;
+  border-radius: 12px;
+}
+.skeleton_group_post_body {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 12px;
+}
+.skeleton_group_post_footer {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skeleton_post_footer_btn {
+  width: 50px;
+  height: 15px;
+  border-radius: 10px;
+}
+.skeleton_post_container {
+  width: 100%;
+  height: 70vh;
+}
+.skeleton_post_card {
+  border: 1px solid rgb(237, 235, 235);
+  max-width: 450px;
+  width: 100%;
+  margin: 7px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.skeleton_post_header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.skeleton_post_image {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.skeleton_post_user_info {
+  width: 100%;
+  margin-left: 10px;
+}
+.skeleton_post_name {
+  width: 150px;
+  height: 15px;
+  border-radius: 10px;
+}
+.skeleton_post_username {
+  width: 85px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.skeleton_post_body {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  margin: 7px 0;
+}
+.skeleton_post_footer {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skeleton_footer_post_btn {
+  width: 25%;
+  height: 20px;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+.blockcast_skeleton_container {
+  width: 100%;
+  height: 83.5vh;
+}
+.skeleton_list_card {
+  border: 1px solid rgb(231, 224, 224);
+  max-width: 450px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.skeleton_block_cast_pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.skeleton_list_card_box {
+  width: 100%;
+  height: auto;
+  margin-top: 7px;
+}
+.skeleton_list_blockcast_name {
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+}
+.skeleton_list_members_box {
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 7px 0;
+}
+.skeleton_list_bio_box {
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 7px 0;
+}
+.skeleton_loader_container {
+  width: 100%;
+  height: 92vh;
+  overflow: scroll;
+}
+.noti_loader_card {
+  border: 1px solid rgb(240, 240, 240);
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+}
+.noti_line_section {
+  width: 100%;
+  margin: 0px 5px;
+}
+.noti_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.noti_line_one {
+  height: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.noti_line_two {
+  height: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 80%;
+}
+.seleton_block_card {
+  margin: 5px 0;
+  border: 1px solid rgb(226, 223, 223);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.seleton_block_card_img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  margin-right: 7px;
+}
+.seleton_block_card_text_one {
+  /* border: 1px solid red; */
+  width: 170px;
+  height: 20px;
+  border-radius: 7px;
+}
+.seleton_block_card_text_two {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 12px;
+  border-radius: 7px;
+  margin-top: 4px;
+}
+.block_text_skeleton {
+  width: 100%;
+}
+.nft_skeleton_container {
+  width: 100%;
+  height: 92vh;
+}
+.nft_skeleton_header {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.nft_post_user_pic_skeleton {
+  width: 35px;
+  height: 35px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+.nft_post_user_name_skeleton {
+  width: 150px;
+  height: 20px;
+  border-radius: 12px;
+  margin-right: 3px;
+}
+.nft_post_user_username_skeleton {
+  border-radius: 12px;
+  width: 75px;
+  height: 12px;
+}
+.nft_post_body_skeleton {
+  margin: 5px 0;
+  padding: 7px;
+}
+.nft_post_body_skeleton_line {
+  width: 100%;
+  height: 15px;
+  border-radius: 12px;
+  margin-bottom: 5px;
+}
+.nft_post_footer_sekeleton {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skeleton_footer_button {
+  width: 75px;
+  height: 25px;
+  border-radius: 12px;
+}
+.analytics_page_loader_section {
+  width: 100%;
+  height: 92.5vh;
+  overflow: hidden;
+}
+.analytics_loader_tab {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7px;
+}
+.loader_tab_box {
+  width: 48%;
+  height: 20px;
+  border-radius: 15px;
+}
+.analytics_chart_section_loader {
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.chart_loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.loader_analyics_grid_box_section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.loader_analytics_grid_box_one {
+  width: 130px;
+  height: 110px;
+  border-radius: 5px;
+  margin: 3px 7px;
+}

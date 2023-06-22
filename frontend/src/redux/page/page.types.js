@@ -1,0 +1,11 @@
+/** @format */
+
+const ActionTypes = {
+  SET_PAGE_TYPE: "SET_PAGE_TYPE",
+  DRAWER_HEANDLER: "DRAWER_HEANDLER",
+  MOBILE_DRAWER: "MOBILE_DRAWER",
+  SCROLL_AXIS: "SCROLL_AXIS",
+  SCROLL_HEIGHT: "SCROLL_HEIGHT",
+};
+
+export default ActionTypes;

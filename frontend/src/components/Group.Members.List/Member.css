@@ -1,0 +1,45 @@
+.user_card {
+  border: 1px solid rgba(149, 149, 149, 0.75);
+  max-width: 450px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 7px;
+  box-shadow: 4px 5px 9px 0px rgba(149, 149, 149, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_user_info {
+  width: 100%;
+}
+.user_card_avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.user_cardname {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0 5px;
+}
+.user_card_username {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(149, 149, 149, 0.75);
+}
+.menu_item {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.addmin_tag {
+  padding: 0 5px;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: aliceblue;
+  letter-spacing: 0.2px;
+  border: 1px solid crimson;
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: crimson;
+}

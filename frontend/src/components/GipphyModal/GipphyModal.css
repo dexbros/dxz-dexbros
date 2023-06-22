@@ -1,0 +1,132 @@
+.modal {
+  display: block;
+  height: fit-content;
+  z-index: 100;
+  position: fixed;
+  top: 22vh;
+  left: 10%;
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+}
+
+.modal__header {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  background: white;
+  border-bottom: 1px solid var(--lightGrey);
+}
+
+.modal__header h2 {
+  margin: 0.5rem;
+}
+
+.modal__content {
+  padding: 1rem 0.5rem;
+}
+
+.modal__footer {
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+.modal-enter {
+  transform: translateY(-10rem);
+  opacity: 0;
+}
+
+.modal-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.modal-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-exit-active {
+  transform: translateY(-10rem);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+
+.fixed-modal-area{
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+/* Current CSS code */
+
+.__modal_overlay {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.__modal {
+  background-color: #fefefe;
+  /* margin: 15% auto; */
+  height: auto;
+  padding: 12px;
+  border: 1px solid #888;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.__modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal_header_text {
+  font-size: 0.885rem;
+  font-weight: 600;
+}
+._modal_delete_close_btn {
+  font-size: 1.1rem;
+  color: black !important;
+}
+.__group_modal_body {
+  /* text-align: center; */
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  margin-bottom: 20px;
+  padding: var(--spacing);
+}
+.__group_modal_footer {
+  text-align: right;
+  padding: var(--spacing);
+}
+.modal_tab {
+  width: 100%;
+  height: 7vh;
+}
+.modal_tab_list {
+  width: 33.3%;
+  height: 7vh;
+  color: black !important;
+  font-weight: 500;
+}
+.modal_tab_list_active {
+  color: var(--blue) !important;
+  border-bottom: 2px solid var(--blue);
+}

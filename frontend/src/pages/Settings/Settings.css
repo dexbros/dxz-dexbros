@@ -1,0 +1,130 @@
+.settings_tab {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.tab_container {
+  width: 33%;
+  text-align: center;
+  padding: var(--spacing);
+  cursor: pointer;
+}
+.active_tab {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+.settings_box {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+.settings_box_header {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings_box_header_text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.settings_box_subheader_text {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.btn_container {
+  text-align: right;
+}
+.save_btn, .cancel_btn {
+  margin: 13px 5px;
+  padding: 3px 18px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: var(--blue);
+  color: white;
+}
+.cancel_btn {
+  background-color: crimson;
+}
+.select {
+  width: 90%;
+  height: 38px;
+  margin: 0px auto;
+}
+.select_dropdown_box {
+  width: 100%;
+  text-align: center;
+}
+.radio_input {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.edit_page {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 12px;
+}
+.radio_container {
+  font-weight: 400;
+}
+.__navbar {
+  margin-bottom: var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_link {
+  width: 33%;
+  text-align: center;
+  padding: var(--spacing);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+.nav_link:hover {
+  color: var(--blue);
+}
+.active_link {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
+.form_container {
+  /* border: 1px solid red; */
+  padding: var(--spacing);
+}
+.input_field {
+ width: 100%;
+ height: 38px;
+ border-radius: 7px;
+ outline: none; 
+ border: 1px solid rgb(208, 207, 207);
+ margin: 7px;
+ padding-left: 5px;
+ font-size: 0.8rem;
+}
+
+.disable {
+  cursor: no-drop !important;
+  background-color: var(--blueLight);
+}
+._radio_input {
+  font-size:0.85rem !important;
+  font-weight: 500 !important;
+}
+.select_option {
+  width: 100%;
+  height: 38px;
+  border-radius: 7px;
+  padding-left: var(--spacing);
+}
+.option {
+  color: red;
+}
+

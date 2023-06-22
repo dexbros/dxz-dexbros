@@ -1,0 +1,42 @@
+.search_group_list {
+  border: 1px solid rgb(228, 225, 225);
+  max-width: 450px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  cursor: pointer;
+}
+.search_group_box1 {
+  display: flex;
+  align-items: center;
+}
+.block_name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-right: 5px;
+}
+.block_type_tag {
+  font-size: 0.6rem;
+  border: 1px solid #1e90ff;
+  background-color: #1e90ff;
+  font-weight: 400;
+  color: aliceblue;
+  border-radius: 15px;
+  width: 50px;
+  text-align: center;
+  line-height: 15px;
+}
+.block_join_btn {
+  background-color: royalblue;
+  font-weight: 400;
+  color: aliceblue;
+  font-size: 0.85rem;
+  width: 80px;
+  height: 30px;
+  border-radius: 7px;
+}

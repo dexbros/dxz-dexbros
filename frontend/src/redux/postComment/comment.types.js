@@ -1,0 +1,11 @@
+const ActionTypes = {
+  ADD_COMMENT: 'ADD_COMMENT',
+  ADD_LIKE: 'ADD_LIKE',
+  ADD_SPAM: 'ADD_SPAM',
+  ADD_BOOKMARK: 'ADD_BOOKMARK',
+  DELETE_COMMENT: 'DELETE_COMMENT',
+  ADD_PIN: 'ADD_PIN',
+  SELECT_POST: 'SELECT_POST'
+}
+
+export default ActionTypes;

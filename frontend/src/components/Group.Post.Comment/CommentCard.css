@@ -1,0 +1,120 @@
+.group_comment_card {
+  border: 1px solid rgb(149, 149, 149);
+  max-width: 350px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 12px;
+  margin: 9px 0;
+  position: relative;
+}
+.post_comment_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment_box1 {
+  width: 100%;
+  align-items: center;
+}
+.group_post_comment_user_img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.group_post_comment_user_name {
+  padding: 0 9px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.group_post_comment_user_username {
+  font-size: 0.685rem;
+  font-weight: 500;
+  color: rgb(158, 158, 158);
+}
+.comment_body {
+  margin: 9px 0;
+}
+.group_post_comment {
+  font-weight: 400;
+}
+.group_comment_card_footer {
+ display: flex;
+ justify-content: space-around; 
+ align-items: center;
+}
+.group_footer_btn {
+  /* border: 1px solid rgb(196, 196, 196); */
+  max-width: 100px;
+  width: 100%;
+  height: 38px;
+  border-radius: 7px;
+  color: black;
+  transition: 0.2s linear;
+  display: flex;
+  align-items: center;
+}
+.group_like_comment:hover {
+  background-color: rgba(220, 20, 60, 0.133);
+  color: crimson;
+}
+.group_dislike_comment:hover {
+  color: slateblue;
+  background-color: rgba(105, 90, 205, 0.204);
+}
+.comment_dislike_fill {
+  color: slateblue;
+}
+.group_reply_comment:hover {
+  color: royalblue;
+  background-color: rgba(65, 105, 225, 0.152);
+}
+.group_spam_comment:hover {
+  background-color: rgba(255, 68, 0, 0.14);
+  color: orangered;
+}
+.comment_spam_fill {
+  color: orangered;
+}
+.grou_commentactive_like {
+  color: crimson;
+}
+.group_comment_pinned_cmnt {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: royalblue;
+}
+.comment_sorting_tags {
+  padding: 12px;
+}
+.comment_sort_tag {
+  border: 1px solid royalblue;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  padding: 2px 12px;
+  margin: 0px 5px;
+  font-weight: 450;
+  color: royalblue;
+}
+.active_comment_sort_tag {
+  background-color: royalblue;
+  color: white;
+}
+.like_count {
+  padding-left: 3px;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.show_replies_btn {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: black !important;
+}
+.group_comment_card_image {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 7px;
+}

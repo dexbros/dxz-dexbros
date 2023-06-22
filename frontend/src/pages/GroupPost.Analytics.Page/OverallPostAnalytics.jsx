@@ -1,0 +1,97 @@
+/** @format */
+
+import React, { useState, useEffect } from "react";
+
+import { Bar, Line, Doughnut } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  PointElement,
+  ArcElement,
+  Chart,
+  ChartConfiguration,
+  LineController,
+  LineElement,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  PointElement,
+  LineController,
+  LineElement,
+  ArcElement
+);
+
+const OverAllAnalytics = ({ post }) => {
+  const [likes, setLikes] = React.useState(
+    post.likes.length +
+      post.heart.length +
+      post.haha.length +
+      post.party.length +
+      post.dislikes.length
+  );
+  const [comments, setComments] = React.useState(post.cmnts);
+  const [shares, setShares] = React.useState(post.share.length);
+  const [engagement, setEngagement] = React.useState(
+    post.likes.length +
+      post.heart.length +
+      post.haha.length +
+      post.party.length +
+      post.dislikes.length +
+      post.share.length +
+      post.cmnts
+  );
+  const [flwrIncr, setFlwrIncr] = React.useState(post.flwr_incr);
+
+  const data = {
+    maintainAspectRatio: true,
+    responsive: true,
+    labels: [
+      `Reaction: ${likes}`,
+      `Shares: ${shares}`,
+      `Comments: ${comments}`,
+      `Engagement: ${engagement}`,
+      `Follower increment: ${flwrIncr}`,
+    ],
+    datasets: [
+      {
+        data: [likes, shares, comments, engagement, flwrIncr],
+        backgroundColor: [
+          "rgba(255, 165, 2, 0.7)",
+          "rgba(46, 213, 115, 0.7)",
+          "rgba(55, 66, 250,  0.7)",
+          "rgba(44, 44, 84, 0.7)",
+          "rgba(52, 73, 94, 0.7)",
+          "rgba(231, 76, 60, 0.7)",
+        ],
+        hoverBackgroundColor: [
+          "rgba(255, 165, 2,1.0)",
+          "rgba(46, 213, 115,1.0)",
+          "rgba(55, 66, 250,1.0)",
+          "rgba(44, 44, 84,1.0)",
+          "rgba(52, 73, 94,1.0)",
+          "rgba(231, 76, 60,1.0)",
+        ],
+      },
+    ],
+  };
+
+  return (
+    <div>
+      Data
+      <Doughnut data={data} />
+    </div>
+  );
+};
+
+export default OverAllAnalytics;

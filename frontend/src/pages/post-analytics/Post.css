@@ -1,0 +1,33 @@
+.analytics_count_container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid rgb(177, 177, 177);
+  width: 150px;
+  height: 130px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.box_header {
+  font-size: 1.02rem;
+  font-weight: 500;
+}
+.box_count {
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+.pie_chart_container {
+  max-width: 500px;
+  width: 100%;
+  margin: 10px auto;
+}

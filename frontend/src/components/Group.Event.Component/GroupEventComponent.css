@@ -1,0 +1,58 @@
+.group_event_card {
+  border: 1px solid rgb(198, 197, 197);
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.group_event_card_header {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_box1 {
+  width: 100%;
+}
+
+.profile_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.profile_name {
+  font-weight: 500;
+  padding: 0 7px;
+}
+.profile_username, .event_time {
+  font-weight: 400;
+  font-size: 0.7rem;
+  padding: 0 7px;
+}
+.event_menu_item {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.group_event_body {
+  margin: 12px 0;
+}
+.event_title {
+  font-size: 0.985rem;
+  font-weight: 600;
+}
+.event_description {
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.event_teme_left {
+  font-size: 0.98rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.sub_header {
+  padding-right: 7px;
+}

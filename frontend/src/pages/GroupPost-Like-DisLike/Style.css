@@ -1,0 +1,29 @@
+.page_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vh;
+  padding: 7px;
+}
+.reaction_list_image {
+  width: 20px;
+  height: 20px;
+}
+.list_image {
+  list-style: none;
+  /* border: 1px solid red; */
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list_image_active {
+  border-bottom: 2px solid rgb(75, 134, 244);
+}
+.reaction_count {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}

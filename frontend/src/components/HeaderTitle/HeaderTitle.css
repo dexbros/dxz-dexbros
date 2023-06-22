@@ -1,0 +1,33 @@
+.header_title_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_name {
+  font-weight: 700;
+}
+.header_menu_btn {
+  color: black !important;
+}
+.header_title_container {
+  width: 100%;
+}
+.content_container {
+  width: 100%;
+}
+.normal_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input_container {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.content_container {
+  font-size: 0.85rem;
+  color: black;
+  font-weight: 500;
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "quiztasy",
+  "private_key_id": "e5b319e885924b0172b201a7a7425889fe49df02",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCzLqexG0xbg9fp\nJ1EAFHlDdj7yz+2gBECrhbgdob/cOZkAf1xVPtd+yGgzr08HLjbq5isj0jvHwU1Z\nTB+3TAXAzO6fjAHwe+az5w6aAp3sb3qxoqkyYiXPefNfrhdRVMxa02WGto9bFYau\nmuVyhkz4mlMa73/Ho95CC4uCma5f6JbACpgoiX4xfabX+jKPLuuEGOp23mpEO77F\nGiCvBB/7pLxaDO0183D405whL3GLpgLs7jqwIf+kWh9qAWT7uZ5BFgKMV2u4mpwQ\nY8kxhAu543ufMa3Vzts3QNicftq3Y8jCxm5jk4Hxvhtx7QMuw54BsflPEz+J4HsX\nfHSvgUXdAgMBAAECgf9sA4idB9PIwW7FGkT49qGNd6bpB2NHZa9HnvHgVVaCY2l1\n23BXhLmt/qtIPdwXOQPChtZm9NblYLk8C6egpB+wRTQR5gHLMYMoIyksLDCJCCTi\nifSoN3ZsLbE5uXWX9CfaCuAo9qktjfe+JmbX6dbi+nOkgj20ZjPAqFhxSpHHpIEc\nZnoUBx+N34PEnjMNM0RaANu78WfGezKE0gho+WJkOHUV0XKvP8WIqXViQe8fbMy2\nOM3tHY48dqou+VT285du0muKk/ykgCkvBpWaOQ39kRKizWC7z9ZAImELMyt24oT8\nxDoDmhkAZNSSFp+ORjBXOOsbZ5uvUOdWgmF6k0ECgYEA9go1NM0cc/s9SkERCMFX\nhwdSyq+Fe/e0JagRt1eY6wLTwTDbeUJP+QddeSg+1ZdvfS0M0Qe2YF/Aw/LMwleY\npBkqW4tk6cmxvwwxhxB5DlGaylXcMj4fuM2Sed++jDVK9tJBETL+RDRuGdj22Obx\nO9uMAQptpith6MNgVSw61BECgYEAum+UYZFoV3FDAO1B7Yk3W8nBfQiaIoxQ2aFN\nutSCsge86s4jEV9uSrkUyX8w+0GO4Hqh03oa9823bprYVsr1+HjMohaKgF4jOVAr\nMOGcivmdknPubptMsrtlTkMAHKlO+gPgUqF9tEc6ipNuRspt3zpKkh+DkTuHa8Do\nzs9ZcQ0CgYB4jifj51y5t7EgYSFnmNS6ZOw8RCSzyXuLt/52R4W2IXyAfOANWmC1\nNNaoNwASyFDolNpi0dSbBE//s0iBMUqpnWsT0AlyRFHDusXJ2Fh4m6Os4MU0GRyS\nAKh07xz+tl408nDPbJ0J7mbEY3sQbJhnK/w9xk5TzY377z+UfEeXAQKBgDuoNrfd\n2qCYepNSWFVVIiS587M5zHCfq8NoDUJqfAPR3A7atXf6rIU2okMz8w2DVd/Y/e14\n1iZTao32+KEVQw4mQXzgb6NR/D17vMZge0IxS82wUSyNf0Z2Fp2rbN6/AqmYEfD/\nAgVtAXuUX6ZBYlUbBv+pG+WeQeAmE5kR2pIFAoGALQhjtNYetjFxdKko5x11u0HI\n6Y0oQMUwuu9Ul5CVSGTx8NXHKJukKVl9uvRPvhOQsMph6dGRyFQUV7JnMU/8im3Y\natcbFCTMTeLnCeYJ6y7upoj5vyR92ytw6u1zUNsZgvOSkZiQWf75Pwoq2REMJ1e4\ndAWuanfhs9gnWMH4g3Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dexbros-upload@quiztasy.iam.gserviceaccount.com",
+  "client_id": "107858994472662681432",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dexbros-upload%40quiztasy.iam.gserviceaccount.com"
+}

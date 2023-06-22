@@ -1,0 +1,56 @@
+ ns     | bin        | indextype | set            | state | indexname  | path       | type     |
++--------+------------+-----------+----------------+-------+------------+------------+----------+
+| process.env.CLUSTER_NAME | "gId"      | "DEFAULT" | "allQuizzes"   | "RW"  | "u_id"     | "gId"      | "STRING" |
+| process.env.CLUSTER_NAME | "d_u"      | "DEFAULT" | process.env.SET_USERS        | "RW"  | "d_u"      | "d_u"      | "STRING" |
+| process.env.CLUSTER_NAME | "s_t"      | "DEFAULT" | process.env.SET_GROUP_SEARCH | "RW"  | "s_t"      | "s_t"      | "STRING" |
+| process.env.CLUSTER_NAME | "b_n"      | "DEFAULT" | process.env.SET_GROUP_SEARCH | "RW"  | "b_n"      | "b_n"      | "STRING" |
+| process.env.CLUSTER_NAME | "s_t_u"    | "DEFAULT" | process.env.SET_GROUP_SEARCH | "RW"  | "s_t_u"    | "s_t_u"    | "STRING" |
+| process.env.CLUSTER_NAME | "s_t_f"    | "DEFAULT" | process.env.SET_GROUP_SEARCH | "RW"  | "s_t_f"    | "s_t_f"    | "STRING" |
+| process.env.CLUSTER_NAME | "s_t_u"    | "DEFAULT" | process.env.SET_USERS        | "RW"  | "s_t_du"   | "s_t_u"    | "STRING" |
+| process.env.CLUSTER_NAME | "s_t_f"    | "DEFAULT" | process.env.SET_USERS        | "RW"  | "s_t_df"   | "s_t_f"    | "STRING" |
+| process.env.CLUSTER_NAME | "f_t"      | "DEFAULT" | process.env.SET_POST_SEARCH  | "RW"  | "f_t"      | "f_t"      | "STRING" |
+| process.env.CLUSTER_NAME | "u_dun"    | "DEFAULT" | process.env.SET_POSTS        | "RW"  | "dpost"    | "u_dun"    | "STRING" |
+| process.env.CLUSTER_NAME | "id"       | "DEFAULT" | process.env.SET_POSTS        | "RW"  | "id"       | "id"       | "STRING" |
+| process.env.CLUSTER_NAME | "id"       | "DEFAULT" | process.env.SET_POST_META    | "RW"  | "idm"      | "id"       | "STRING" |
+| process.env.CLUSTER_NAME | "postId"   | "DEFAULT" | process.env.SET_POST_COMMENT | "RW"  | "post_id"  | "postId"   | "STRING" |
+| process.env.CLUSTER_NAME | "p_id"     | "DEFAULT" | process.env.SET_GROUP_POSTS  | "RW"  | "p_id"     | "p_id"     | "STRING" |
+| process.env.CLUSTER_NAME | "e_id"     | "DEFAULT" | process.env.SET_BLOCK_EVENT  | "RW"  | "e_id"     | "e_id"     | "STRING" |
+| process.env.CLUSTER_NAME | "g_id"     | "DEFAULT" | "process.env.SET_GROUP"        | "RW"  | "g_id"     | "g_id"     | "STRING" |
+| process.env.CLUSTER_NAME | "handleUn" | "DEFAULT" | process.env.SET_USERS        | "RW"  | "handleUn" | "handleUn" | "STRING" |
+| process.env.CLUSTER_NAME | "log_un"   | "DEFAULT" | process.env.SET_USERS        | "RW"  | "log_un"   | "log_un"   | "STRING" |
+| process.env.CLUSTER_NAME | "handleUn" | "DEFAULT" | process.env.SET_USER_META   | "RW"  | "h_un"     | "handleUn" | "STRING" |
+| process.env.CLUSTER_NAME | "p_id"     | "DEFAULT" | "g_p_meta"     | "RW"  | "pid"      | "p_id"     | "STRING" |
+| process.env.CLUSTER_NAME | "p_k"      | "DEFAULT" | process.env.SET_TRENDING     | "RW"  | "p_k"      | "p_k"      | "STRING" |
+| process.env.CLUSTER_NAME | "p_k"      | "DEFAULT" | process.env.SET_BLOCKCAST_SEARCH   | "RW"  | "b_p_k"    | "p_k"      | "STRING" |
+| process.env.CLUSTER_NAME | "b_c_un"   | "DEFAULT" | process.env.SET_BLOCKCAST        | "RW"  | "b_c_un"   | "b_c_un"   | "STRING" |
+| process.env.CLUSTER_NAME | "isGroup"  | "DEFAULT" | process.env.SET_BLOCKCAST        | "RW"  | "isGroup"  | "isGroup"  | "STRING" |
+| process.env.CLUSTER_NAME | "b_id"     | "DEFAULT" | process.env.SET_BLOCKCAST        | "RW"  | "b_id"     | "b_id"     | "STRING" |
+
++--------+------------+-----------+----------------+-------+------------+------------+----------+
+
+
+
+****** Latest 12.01.2023
++--------+------------+-----------+----------------------+-------+----------------------+------------+----------+
+| ns     | bin        | indextype | set                  | state | indexname            | path       | type     |
++--------+------------+-----------+----------------------+-------+----------------------+------------+----------+
+| "test" | "gId"      | "DEFAULT" | "allQuizzes"         | "RW"  | "u_id"               | "gId"      | "STRING" |
+| "test" | "d_u"      | "DEFAULT" | "users"              | "RW"  | "d_u"                | "d_u"      | "STRING" |
+
+| "test" | "s_t_u"    | "DEFAULT" | "users"              | "RW"  | "s_t_du"             | "s_t_u"    | "STRING" |
+| "test" | "s_t_f"    | "DEFAULT" | "users"              | "RW"  | "s_t_df"             | "s_t_f"    | "STRING" |
+
+
+
+
+
+| "test" | "handleUn" | "DEFAULT" | "users"              | "RW"  | "handleUn"           | "handleUn" | "STRING" |
+| "test" | "log_un"   | "DEFAULT" | "users"              | "RW"  | "log_un"             | "log_un"   | "STRING" |
+| "test" | "handleUn" | "DEFAULT" | "users_meta"         | "RW"  | "h_un"               | "handleUn" | "STRING" |
+
+
+
+
+| "test" | "m_p_id"   | "DEFAULT" | "main_posts"         | "RW"  | "m"                  | "m_p_id"   | "STRING" |
+| "test" | "id"       | "DEFAULT" | "main_posts"         | "RW"  | "m_p_id"             | "id"       | "STRING" |
++--------+------------+-----------+----------------------+-------+----------------------+------------+----------+

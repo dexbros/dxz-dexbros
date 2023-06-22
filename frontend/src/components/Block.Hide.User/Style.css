@@ -1,0 +1,35 @@
+.user_list {
+  max-width: 450px;
+  padding: var(--spacing);
+  margin: 12px auto;
+  border: 1px solid rgb(201, 201, 201);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.user_list_profilePic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.listUser_name {
+  font-weight: 600;
+  padding: 0 7px;
+}
+.listUser_username {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--greyText);
+}
+.user_btn {
+  border: 1px solid var(--blue);
+  color: white;
+  background-color: var(--blue);
+  font-size: 0.885rem;
+  font-weight: 500;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
