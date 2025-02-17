@@ -53,18 +53,19 @@ The **SocialX Token** (SXT) powers a next-generation social media ecosystem buil
 
 Below is the **initial distribution** at TGE, expressed as a **percentage** of the **1.21T total**. A portion of tokens is allocated to each category, with vesting schedules to ensure long-term stability. This distribution **does not** include inflationary tokens that may be minted over time.
 
-| **Category**                      | **Percentage** | **Tokens (SXT)**      | **Vesting / Release**                                   | **Rationale / Usage**                                                                          |
-| --------------------------------- | -------------: | --------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Private Sale / Seed Investors** |             8% | 96,800,000,000        | - 10% at TGE <br> - Remainder monthly over 12–18 months | Attract strategic backers; raise capital for server costs, dev, marketing                      |
-| **Public Sale / IDO / IEO**       |             5% | 60,500,000,000        | - 25% at TGE <br> - Remainder linearly over 6 months    | Broad community sale; ensures public liquidity and participation                               |
-| **Team & Advisors**               |            15% | 181,500,000,000       | - 12-month cliff <br> - Monthly vesting over 36 months  | Align core contributors with long-term project success                                         |
-| **Ecosystem & Partnerships**      |            15% | 181,500,000,000       | - DAO / multi-sig controlled                            | Strategic grants, cross-project integrations, joint marketing to expand the ecosystem          |
-| **Community & User Growth**       |            25% | 302,500,000,000       | - Deployed gradually (4–5 years) <br> - DAO oversight   | Incentives for user onboarding, social engagement, “social mining,” and referral programs      |
-| **Staking & Validator Rewards**   |             5% | 60,500,000,000        | - Gradual release (block/epoch basis)                   | Small initial pool to reward early validators; later supplemented by minted (inflation) tokens |
-| **Liquidity & Market Making**     |            10% | 121,000,000,000       | - Unlocked at TGE, used in phases                       | Provide DEX/CEX liquidity, reduce volatility, ensure stable trading pairs                      |
-| **Foundation / Treasury**         |            12% | 145,200,000,000       | - DAO or multi-sig controlled                           | Future grants, bounties, hackathons, emergency funding, strategic growth                       |
-| **Unallocated Reserve**           |             5% | 60,500,000,000        | - TBD (DAO vote / future decision)                      | Could be used for future private rounds, new strategic opportunities, or burned if not needed  |
-| **Total**                         |       **100%** | **1,210,000,000,000** |                                                         |                                                                                                |
+| **Category**                      | **Percentage** | **Tokens (SXT)**      | **Vesting / Release**                                       | **Rationale / Usage**                                                                                             |
+| --------------------------------- | -------------: | --------------------- | -----------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------ |
+| **Private Sale / Seed Investors** |             8% | 96,800,000,000        | - 10% at TGE<br>- Remainder monthly over 12–18 months        | Attract strategic backers; raise capital for servers, dev, marketing                                               |
+| **Public Sale / IDO / IEO**       |             8% | 96,800,000,000        | - 25% at TGE<br>- Remainder linearly over 6 months          | Broaden community ownership; ensure sufficient public liquidity                                                   |
+| **Team & Advisors**               |            15% | 181,500,000,000       | - 12-month cliff<br>- Monthly vesting over 36 months        | Align core contributors/advisors with long-term success                                                            |
+| **Ecosystem & Partnerships**      |            10% | 121,000,000,000       | - DAO / multi-sig controlled                                | Strategic grants, cross-project integrations, and co-marketing initiatives to expand the platform’s ecosystem      |
+| **Community & User Growth**       |            25% | 302,500,000,000       | - Deployed gradually (4–5 years)<br>- DAO oversight         | Large incentive pool for user onboarding, social engagement, referral programs, and “social mining”               |
+| **Staking & Validator Rewards**   |             7% | 84,700,000,000        | - Gradual emission over blocks/epochs                       | Enhanced allocation for validators to secure the network; later supplemented by inflation or fee-based rewards    |
+| **Liquidity & Market Making**     |            10% | 121,000,000,000       | - Unlocked at TGE, used in phases                           | Provide liquidity on DEX/CEX, reduce volatility, and maintain healthy trading pairs                                |
+| **Foundation / Treasury**         |            12% | 145,200,000,000       | - DAO or multi-sig controlled                               | Cover future grants, bounties, hackathons, emergency funding, strategic growth                                     |
+| **Unallocated Reserve**           |             5% | 60,500,000,000        | - TBD (DAO vote / future decision)                          | Flexible buffer for additional fundraising, expansions, or potential token burns if not needed                    |
+| **Total**                         |       **100%** | **1,210,000,000,000** |                                                              |                                                                                                                    |
+
 
 ### Notes on Distribution
 
