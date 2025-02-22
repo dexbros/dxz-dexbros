@@ -8,7 +8,7 @@
 
 ## **📌 1. Introduction**
 
-Dexbros ($DxBs) follows a structured unlocking and vesting mechanism designed to:
+Dexbros ($DXZ) follows a structured unlocking and vesting mechanism designed to:
 
 ✔️ **Fair & Predictable Distribution** – Prevents token dumping and market instability.  
 ✔️ **Long-Term Incentive Alignment** – Core contributors, investors, and users benefit gradually.  
