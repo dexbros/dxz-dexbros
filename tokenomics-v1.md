@@ -14,7 +14,7 @@ Dexbros ($DXZ) follows a structured unlocking and vesting mechanism designed to:
 ✔️ **Long-Term Incentive Alignment** – Core contributors, investors, and users benefit gradually.  
 ✔️ **Governance Oversight** – DAO-managed allocations for sustainability and decentralization.
 
-At TGE (**Token Generation Event**), **1.21 trillion DxBs tokens** are minted on **Ethereum L1**, with controlled releases to **L2** for usage and circulation.
+At TGE (**Token Generation Event**), **1.21 trillion DXZ tokens** are minted on **Ethereum L1**, with controlled releases to **L2** for usage and circulation.
 
 ---
 
@@ -105,5 +105,4 @@ The **initial 1.21 trillion $DxBs** is divided across multiple allocations, each
 ## **📌 8. Next Steps**
 - ✅ Final Review & Adjustments  
 - ✅ Implement in Smart Contracts  
-- ✅ Deploy & Secure DAO Oversight  
-
+- ✅ Deploy & Secure DAO Oversight
