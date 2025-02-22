@@ -20,9 +20,9 @@ At TGE (**Token Generation Event**), **1.21 trillion DXZ tokens** are minted on 
 
 ## **📌 2. Token Allocation & Unlocking Summary**
 
-The **initial 1.21 trillion $DxBs** is divided across multiple allocations, each with a distinct vesting and unlocking schedule:
+The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each with a distinct vesting and unlocking schedule:
 
-| **Category**                      | **% of Total Supply** | **Tokens (DxBs)** | **Unlocking & Vesting Schedule**                                       |
+| **Category**                      | **% of Total Supply** | **Tokens (DXZ)** | **Unlocking & Vesting Schedule**                                       |
 | --------------------------------- | --------------------- | ----------------- | ---------------------------------------------------------------------- |
 | **Private Sale / Seed Investors** | 8%                    | 96.8B             | **20% at TGE, remainder vests monthly over 12 months**                 |
 | **Public Sale / IDO / IEO**       | 8%                    | 96.8B             | **25% at TGE, remainder vests linearly over 6 months**                 |
@@ -55,15 +55,15 @@ The **initial 1.21 trillion $DxBs** is divided across multiple allocations, each
 
 📌 Once the **Community & User Growth** pool is depleted:
 
-- **1% inflation of total supply (1.21T DxBs) every 21 days.**
+- **1% inflation of total supply (1.21T DXZ) every 21 days.**
 - **Supports staking, validator rewards, social incentives.**
 
 #### **Example Timeline:**
 
 | Cycle   | Total Supply | Inflation (1%) | New Circulating Supply |
 | ------- | ------------ | -------------- | ---------------------- |
-| Cycle 1 | 1.21T DxBs   | 12.1B DxBs     | 1.2221T DxBs           |
-| Cycle 2 | 1.2221T DxBs | 12.22B DxBs    | 1.2343T DxBs           |
+| Cycle 1 | 1.21T DXZ   | 12.1B DXZ     | 1.2221T DXZ           |
+| Cycle 2 | 1.2221T DXZ | 12.22B DXZ    | 1.2343T DXZ           |
 
 ---
 
@@ -93,7 +93,7 @@ The **initial 1.21 trillion $DxBs** is divided across multiple allocations, each
 
 ## **📌 7. Summary**
 
-✔️ **1.21T DxBs minted at TGE, distributed per allocation rules.**  
+✔️ **1.21T DXZ minted at TGE, distributed per allocation rules.**  
 ✔️ **100% of Community Growth unlocked at TGE → funds user incentives.**  
 ✔️ **After exhaustion, 1% inflation every 21 days.**  
 ✔️ **Team & Investors vest gradually to prevent large sell-offs.**  
