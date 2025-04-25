@@ -106,3 +106,40 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 - ✅ Final Review & Adjustments  
 - ✅ Implement in Smart Contracts  
 - ✅ Deploy & Secure DAO Oversight
+
+
+
+
+================================================================================
+            VESTING EXAMPLE: 60% OF 1000 TOKENS WITH A 30-DAY CLIFF, FULL VEST AT 90 DAYS
+            ================================================================================
+
+                // Total slice to vest: 
+                uint256 totalAmount = 1000;
+                uint256 vestAmt     = (totalAmount * 60) / 100;    // 600 tokens (60% of 1000)
+
+                // Schedule parameters:
+                uint64  cliff    = 30 days;   // nothing vests until 30 days after start
+                uint64  duration = 90 days;   // linear vest from t=0 → t=90 days
+
+            Vested amount over time (via (vestAmt * elapsed) / duration):
+
+                • Day 0-29    → 0 tokens vested
+                • Day 30      → (600 * 30) / 90 = 200 tokens vested
+                • Day 60      → (600 * 60) / 90 = 400 tokens vested
+                • Day 90      → (600 * 90) / 90 = 600 tokens vested (fully unlocked)
+                • Day 90+     → 600 tokens available (no further vesting)
+
+            To schedule this on-chain:
+
+                dxz.withdrawAndVest(
+                    vestingVault,
+                    beneficiary,
+                    vestAmt,     // 600
+                    cliff,       // 30 days
+                    duration,    // 90 days
+                    revocable    // e.g. false
+                );
+
+            After that, the beneficiary can call `vestingVault.releaseVestedTokens(id)` at any time
+            to pull out the vested portion according to the above schedule.
