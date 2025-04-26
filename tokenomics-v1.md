@@ -28,10 +28,10 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 | **Public Sale / IDO / IEO**       | 8%                    | 96.8B             | **25% at TGE, remainder vests linearly over 9 months**                 |
 | **Team & Advisors**               | 15%                   | 181.5B            | **12-month cliff, then vests monthly over 36 months**                  |
 | **Ecosystem & Partnerships**      | 10%                   | 121B              | **Fully locked at TGE, released via DAO proposals**                    |
-| **Community & User Growth**       | 21%                   | 302.5B            | **Fully unlocked at TGE for immediate use**                            |
+| **Community & User Growth**       | 16%                   | 193.6B            | **Fully unlocked at TGE for immediate use**                            |
 | **Staking & Validator Rewards**   | 7%                    | 84.7B             | **Gradual emission per block, transitions to inflation-based rewards** |
-| **Liquidity & Market Making**     | 10%                   | 121B              | **20% unlocked at TGE, remainder released strategically by DAO**       |
-| **Foundation / Treasury**         | 12%                   | 145.2B            | **DAO-controlled, unlocked based on proposals**                        |
+| **Liquidity & Market Making**     | 12%                   | 145.2B              | **20% unlocked at TGE, remainder released strategically by DAO**       |
+| **Foundation / Treasury**         | 15%                   | 181.5B            | **DAO-controlled, unlocked based on proposals**                        |
 | **Unallocated Reserve**           | 5%                    | 60.5B             | **TBD (Governance-controlled usage)**                                  |
 
 ---
@@ -51,11 +51,11 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 ---
 
-## **📌 4. Inflation-Based Minting (Post 21% Depletion)**
+## **📌 4. Inflation-Based Minting (Post 16% Depletion)**
 
 📌 Once the **Community & User Growth** pool is depleted:
 
-- **1% inflation of total supply (1.21T DXZ) every 21 days.**
+- **0.75% inflation of total supply (1.21T DXZ) every 21 days.**
 - **Supports staking, validator rewards, social incentives.**
 
 #### **Example Timeline:**
