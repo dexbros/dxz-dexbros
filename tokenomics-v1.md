@@ -24,11 +24,11 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 | **Category**                      | **% of Total Supply** | **Tokens (DXZ)** | **Unlocking & Vesting Schedule**                                       |
 | --------------------------------- | --------------------- | ----------------- | ---------------------------------------------------------------------- |
-| **Private Sale / Seed Investors** | 8%                    | 96.8B             | **20% at TGE, remainder vests monthly over 12 months**                 |
-| **Public Sale / IDO / IEO**       | 8%                    | 96.8B             | **25% at TGE, remainder vests linearly over 6 months**                 |
+| **Private Sale / Seed Investors** | 12%                    | 96.8B             | **20% at TGE, remainder vests monthly over 12 months**                 |
+| **Public Sale / IDO / IEO**       | 12%                    | 96.8B             | **25% at TGE, remainder vests linearly over 6 months**                 |
 | **Team & Advisors**               | 15%                   | 181.5B            | **12-month cliff, then vests monthly over 36 months**                  |
 | **Ecosystem & Partnerships**      | 10%                   | 121B              | **Fully locked at TGE, released via DAO proposals**                    |
-| **Community & User Growth**       | 25%                   | 302.5B            | **Fully unlocked at TGE for immediate use**                            |
+| **Community & User Growth**       | 21%                   | 302.5B            | **Fully unlocked at TGE for immediate use**                            |
 | **Staking & Validator Rewards**   | 7%                    | 84.7B             | **Gradual emission per block, transitions to inflation-based rewards** |
 | **Liquidity & Market Making**     | 10%                   | 121B              | **20% unlocked at TGE, remainder released strategically by DAO**       |
 | **Foundation / Treasury**         | 12%                   | 145.2B            | **DAO-controlled, unlocked based on proposals**                        |
@@ -51,7 +51,7 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 ---
 
-## **📌 4. Inflation-Based Minting (Post 25% Depletion)**
+## **📌 4. Inflation-Based Minting (Post 21% Depletion)**
 
 📌 Once the **Community & User Growth** pool is depleted:
 
@@ -60,10 +60,10 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 #### **Example Timeline:**
 
-| Cycle   | Total Supply | Inflation (1%) | New Circulating Supply |
+| Cycle   | Total Supply | Inflation (0.75%) | New Circulating Supply |
 | ------- | ------------ | -------------- | ---------------------- |
-| Cycle 1 | 1.21T DXZ   | 12.1B DXZ     | 1.2221T DXZ           |
-| Cycle 2 | 1.2221T DXZ | 12.22B DXZ    | 1.2343T DXZ           |
+| Cycle 1 | 1.21T DXZ   | 9.075B DXZ     | 1.219T DXZ           |
+| Cycle 2 | 1.219T DXZ | 9.075B DXZ    | 1.228T DXZ           |
 
 ---
 
@@ -95,7 +95,7 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 ✔️ **1.21T DXZ minted at TGE, distributed per allocation rules.**  
 ✔️ **100% of Community Growth unlocked at TGE → funds user incentives.**  
-✔️ **After exhaustion, 1% inflation every 21 days.**  
+✔️ **After exhaustion, 0.75% inflation every 21 days.**  
 ✔️ **Team & Investors vest gradually to prevent large sell-offs.**  
 ✔️ **DAO governs Treasury, Ecosystem Funds, & future allocations.**  
 ✔️ **Liquidity release is controlled by the DAO to align with market conditions.**
