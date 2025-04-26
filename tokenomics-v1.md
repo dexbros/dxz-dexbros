@@ -24,8 +24,8 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 | **Category**                      | **% of Total Supply** | **Tokens (DXZ)** | **Unlocking & Vesting Schedule**                                       |
 | --------------------------------- | --------------------- | ----------------- | ---------------------------------------------------------------------- |
-| **Private Sale / Seed Investors** | 12%                   | 145.2B             | **10% at TGE, cliff 6-month, remainder vests monthly over 24 months**                 |
-| **Public Sale / IDO / IEO**       | 8%                    | 96.8B             | **20% at TGE, remainder vests linearly over 9 months**                 |
+| **Private Sale / Seed Investors** | 12%                   | 145.2B             | **20% at TGE, cliff 6-month, remainder vests monthly over 24 months**                 |
+| **Public Sale / IDO / IEO**       | 8%                    | 96.8B             | **25% at TGE, remainder vests linearly over 9 months**                 |
 | **Team & Advisors**               | 15%                   | 181.5B            | **12-month cliff, then vests monthly over 36 months**                  |
 | **Ecosystem & Partnerships**      | 10%                   | 121B              | **Fully locked at TGE, released via DAO proposals**                    |
 | **Community & User Growth**       | 21%                   | 302.5B            | **Fully unlocked at TGE for immediate use**                            |
