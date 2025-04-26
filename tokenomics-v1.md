@@ -30,7 +30,7 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 | **Ecosystem & Partnerships**      | 10%                   | 121B              | **Fully locked at TGE, released via DAO proposals**                    |
 | **Community & User Growth**       | 16%                   | 193.6B            | **Fully unlocked at TGE for immediate use**                            |
 | **Staking & Validator Rewards**   | 7%                    | 84.7B             | **Gradual emission per block, transitions to inflation-based rewards** |
-| **Liquidity & Market Making**     | 12%                   | 145.2B              | **20% unlocked at TGE, remainder released strategically by DAO**       |
+| **Liquidity & Market Making**     | 12%                   | 145.2B            | **30% unlocked at TGE, remainder released strategically by DAO**       |
 | **Foundation / Treasury**         | 15%                   | 181.5B            | **DAO-controlled, unlocked based on proposals**                        |
 | **Unallocated Reserve**           | 5%                    | 60.5B             | **TBD (Governance-controlled usage)**                                  |
 
@@ -38,9 +38,9 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 ## **📌 3. Unlocking & Vesting Details Per Allocation**
 
-### **🔴 Liquidity & Market Making (10%)**
-✅ **20% unlocked at TGE.**  
-✅ **Remaining 80% is controlled by DAO for strategic release.**  
+### **🔴 Liquidity & Market Making (12%)**
+✅ **30% unlocked at TGE.**  
+✅ **Remaining 70% is controlled by DAO for strategic release.**  
 ✅ **Supports liquidity across multiple exchanges (DEX & CEX).**  
 ✅ **Ensures market stability & prevents excessive volatility.**  
 
