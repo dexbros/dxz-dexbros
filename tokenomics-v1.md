@@ -134,7 +134,7 @@ Deployed with signer:
 | **Team & Advisors Pool**          | `0x9692e90A85F11d2860Ce2cA424e5f67A4fEAf503` |
 | **Ecosystem Pool**                | `0x81636d07d1b021F32B33eeDe026A2640b1250E58` |
 | **Community Growth Pool**         | `0xF9E651b2303Bd6cE987151c8F8F3Fd2C8132D553` |
-| **Staking Rewards Pool**          | `0x72b12756610a3E8943e56D9396c098d64bf31f1e` |
+| **Staking & validators Pool**     | `0x72b12756610a3E8943e56D9396c098d64bf31f1e` |
 | **Liquidity Pool**                | `0x0f35Cd0C25e197Bf4087f14864cc461DE59F76fC` |
 | **Foundation Pool**               | `0xefa240A0cC9c3ee0D4f422488E196AD58a6b298b` |
 | **Reserve Pool**                  | `0x7a84Ae3ab8D18DDFbcc995FF2e60a64dbd59C92F` |
