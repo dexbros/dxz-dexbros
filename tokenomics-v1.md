@@ -113,7 +113,7 @@ The **initial 1.21 trillion $DXZ** is divided across multiple allocations, each 
 
 # 📄 Deployment Summary (Sepolia Testnet)
 
-Deployed with signer:
+## 🚀 Deployed with signer:
 
 ```
 0x80c8E4481Eb69aee0C13b107c06C6770fAD9a57a
@@ -123,34 +123,34 @@ Deployed with signer:
 
 ## 📦 Deployed Contracts
 
-| **Contract / Pool**              | **Address**                                   |
-| --------------------------------- | --------------------------------------------- |
-| **DexbrosToken**                  | `0xB25D435FF7A2B23430558dFBDB7Dc6ca703A10D3` |
-| **VestingVault**                  | `0x709230016f2ddf02CF6a74Dca7dcc1254bbe59c4` |
-| **EmissionController**            | `0x56AAD61BD104cd335878080812519a4C1832B8c5` |
-| **ProposalManager**               | `0x964Fc1f65afE44316be70E73b31Bc6B08D335449` |
-| **Private Sale Pool**             | `0x96DC1fCba9c1c77b58E653420c330d793a55af33` |
-| **Public Sale Pool**              | `0x302fD1a8ef4B41449dc31DEaAfeBcBc1BE300AaD` |
-| **Team & Advisors Pool**          | `0x9692e90A85F11d2860Ce2cA424e5f67A4fEAf503` |
-| **Ecosystem Pool**                | `0x81636d07d1b021F32B33eeDe026A2640b1250E58` |
-| **Community Growth Pool**         | `0xF9E651b2303Bd6cE987151c8F8F3Fd2C8132D553` |
-| **Staking & validators Pool**     | `0x72b12756610a3E8943e56D9396c098d64bf31f1e` |
-| **Liquidity Pool**                | `0x0f35Cd0C25e197Bf4087f14864cc461DE59F76fC` |
-| **Foundation Pool**               | `0xefa240A0cC9c3ee0D4f422488E196AD58a6b298b` |
-| **Reserve Pool**                  | `0x7a84Ae3ab8D18DDFbcc995FF2e60a64dbd59C92F` |
+| **Contract / Pool**           | **Address**                                  |
+| ----------------------------- | -------------------------------------------- |
+| **DexbrosToken**              | `0x38FfBC9BB1100889ab9a1B2443C6DA0706779304` |
+| **VestingVault**              | `0x85B287B016Aa858301734e5DEeB8Fd17539c6dbB` |
+| **EmissionController**        | `0x6D3dE5683c459e5694bF0e68C10f871Ba8668A27` |
+| **ProposalManager**           | `0x5f8A651473e82B662157D93106A3F3Ec500f439A` |
+| **Private Sale Pool**         | `0x36074a38CB68c79E0a6edc734420E360B8A4Eb4b` |
+| **Public Sale Pool**          | `0x60C2Bf2D559D6467FaD62468ca8993876e7905d5` |
+| **Team & Advisors Pool**      | `0xcE1419e0326e40577303F53Cf87534c0bA92550A` |
+| **Ecosystem Pool**            | `0xD93B899ee09CBFF4E33Ebf95D4f5AcafB2EF946b` |
+| **Community Growth Pool**     | `0x1181660703FF1455204CD3133d87D3aC4A3747C5` |
+| **Staking & Validators Pool** | `0x71F033Bc186e9e781E777d7dbf5594d6D1F6a73E` |
+| **Liquidity Pool**            | `0x5AD7277cF874Ee28e6CD8D89904E94095aEbbd50` |
+| **Foundation Pool**           | `0x8b648EAE41B4658825fe4cbD33c1c29B1ef285ab` |
+| **Reserve Pool**              | `0xb05CB00C4c42b65124Dd5c25E1a3f29eaaF0533D` |
 
 ---
 
 ## 🔑 Roles Granted
 
-| **Action**                                        | **Recipient**               |
-| ------------------------------------------------- | ----------------------------- |
-| Granted `EMISSION_ROLE`                           | EmissionController            |
-| Granted `WITHDRAW_ROLE`                           | ProposalManager               |
-| Granted `WITHDRAW_ROLE`                           | VestingVault                  |
-| Granted `DAO_ROLE` on VestingVault                 | DexbrosToken                  |
-| Granted `WITHDRAW_ROLE`                           | Deployer                      |
-| Granted `EMIT_ROLE`                               | Deployer                      |
+| **Action**                         | **Recipient**      |
+| ---------------------------------- | ------------------ |
+| Granted `EMISSION_ROLE`            | EmissionController |
+| Granted `WITHDRAW_ROLE`            | ProposalManager    |
+| Granted `WITHDRAW_ROLE`            | VestingVault       |
+| Granted `DAO_ROLE` on VestingVault | DexbrosToken       |
+| Granted `WITHDRAW_ROLE`            | Deployer           |
+| Granted `EMIT_ROLE`                | Deployer           |
 
 ---
 
@@ -168,24 +168,26 @@ The following addresses were assigned `DAO_ROLE` across EmissionController, Vest
 
 ## 🪙 Initial Token Seeding (DXZ)
 
-| **Pool**                     | **Amount Seeded** |
-| ----------------------------- | ----------------- |
-| Private Sale                  | 145,200,000,000 DXZ |
-| Public Sale                   | 96,800,000,000 DXZ |
-| Team & Advisors               | 181,500,000,000 DXZ |
-| Ecosystem & Partnerships      | 121,000,000,000 DXZ |
-| Community & User Growth       | 193,600,000,000 DXZ |
-| Staking & Validator Rewards   | 84,700,000,000 DXZ |
-| Liquidity & Market Making     | 145,200,000,000 DXZ |
-| Foundation / Treasury         | 181,500,000,000 DXZ |
-| Reserve                       | 60,500,000,000 DXZ |
+| **Pool**                    | **Amount Seeded**   |
+| --------------------------- | ------------------- |
+| Private Sale                | 145,200,000,000 DXZ |
+| Public Sale                 | 96,800,000,000 DXZ  |
+| Team & Advisors             | 181,500,000,000 DXZ |
+| Ecosystem & Partnerships    | 121,000,000,000 DXZ |
+| Community & User Growth     | 193,600,000,000 DXZ |
+| Staking & Validator Rewards | 84,700,000,000 DXZ  |
+| Liquidity & Market Making   | 145,200,000,000 DXZ |
+| Foundation / Treasury       | 181,500,000,000 DXZ |
+| Reserve                     | 60,500,000,000 DXZ  |
 
 ---
 
 ✅ Deployment addresses saved in:
+
 ```
 deployment/addresses.json
 ```
+
 
 
 
