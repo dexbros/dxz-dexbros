@@ -1,0 +1,45 @@
+🚀 Deploying with: 0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B
+→ DexbrosToken: 0x406C81dd5f7507BA6F3da9BCbb20239D6801b90e
+→ VestingVault: 0xA2C690afbF7108C14Ddd04c6e168747A049dA768
+→ EmissionController: 0x0D57b59fAA4656Bb6E366039752f36170E1478B6
+→ ProposalManager: 0x0A881a32313513965e41B12B999a0F956796a055
+→ Granted EMISSION_ROLE to EmissionController
+→ Granted WITHDRAW_ROLE to ProposalManager
+→ Granted WITHDRAW_ROLE to VestingVault
+→ Granted DAO_ROLE on VestingVault to DexbrosToken
+→ Granted WITHDRAW_ROLE to deployer
+→ Granted EMIT_ROLE to deployer
+→ EmissionController.DAO_ROLE ← [
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ VestingVault.DAO_ROLE      ← [
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ ProposalManager.DAO_ROLE   ← [
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ privateSalePool: 0xDa58D2dD4884016184D50dA99AE359877987971E
+→ publicSalePool: 0x1A6989f466918979261fEb901Ea90c8CdC147778
+→ teamPool: 0xcE7c5914B004fb61a0b4A42CD313a0eD3436D13f
+→ ecosystemPool: 0xB9380cbac15BfaA53f5114a8DEF58DCE6d9C4d13
+→ communityPool: 0xe923e0BeFd1975CF7cA2C9303ca8D953Bf9054e6
+→ stakingRewardsPool: 0x6Ab7f4863ACa14708604355258FDA835997a3407
+→ liquidityPool: 0x030802598b589EfF340Ce6c4D489B266051F4f94
+→ foundationPool: 0xf1eC5b3797f35086Ef7486f53531a8723A4abA08
+→ reservePool: 0xC7605a4858E7648Ff5ec95F50e7C864168Ea156a
+→ PrivateSale seeded: 145200000000.0 DXZ
+→ PublicSale seeded: 96800000000.0 DXZ
+→ Team&Advisors seeded: 181500000000.0 DXZ
+→ Ecosystem seeded: 121000000000.0 DXZ
+→ Community Growth seeded: 193600000000.0 DXZ
+→ StakingRewards seeded: 84700000000.0 DXZ
+→ Liquidity seeded: 145200000000.0 DXZ
+→ Foundation seeded: 181500000000.0 DXZ
+→ Reserve seeded: 60500000000.0 DXZ
+✅ deployment/addresses.json written
