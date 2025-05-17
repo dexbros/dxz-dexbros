@@ -43,3 +43,55 @@
 → Foundation seeded: 181500000000.0 DXZ
 → Reserve seeded: 60500000000.0 DXZ
 ✅ deployment/addresses.json written
+
+
+
+
+root@dxz-chain:/var/www/dexbros/github/zkevm-contracts# npx hardhat run scripts/deploy.ts --network sepolia
+🚀 Deploying with: 0x1C76396958b40Ff0B8df0BE42E159D54c5DDE15c
+→ DexbrosToken: 0xf902306C472a8a8F2B5B2F246B41eB0c01033d37
+→ VestingVault: 0x6c72058BD7B45F3c0fE910D5ecD81995D7a1D6Ec
+→ EmissionController: 0x8b2E151EeE68683702f3a48fe1D05f6a33750274
+→ ProposalManager: 0x4cB368050F2b54CF94A15B94345909F5a0F012bc
+→ Granted EMISSION_ROLE to EmissionController
+→ Granted WITHDRAW_ROLE to ProposalManager
+→ Granted WITHDRAW_ROLE to VestingVault
+→ Granted DAO_ROLE on VestingVault to DexbrosToken
+→ Granted WITHDRAW_ROLE to deployer
+→ Granted EMIT_ROLE to deployer
+→ EmissionController.DAO_ROLE ← [
+  '0x1C76396958b40Ff0B8df0BE42E159D54c5DDE15c',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ VestingVault.DAO_ROLE      ← [
+  '0x1C76396958b40Ff0B8df0BE42E159D54c5DDE15c',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ ProposalManager.DAO_ROLE   ← [
+  '0x1C76396958b40Ff0B8df0BE42E159D54c5DDE15c',
+  '0xAb36240F255950BB08b51fC8D8ccbf6a13AB284B',
+  '0x46319f538db66a170343668E6f32b2BD99EC8e61'
+]
+→ privateSalePool: 0xB9084201F2C0bE4CbB6897e85F1668DEbE8A3275
+→ publicSalePool: 0x61effde7a6C9eBF48D0DB481B1B85eE22f0a0453
+→ teamPool: 0xb3c61617119636162a5dcfbF74570060e0743C1D
+→ ecosystemPool: 0x2Cb7ba727E1e6B01d1B02B82F9809e9c0555a163
+→ communityPool: 0xBC354df35A6EFbCdFa9360f21cdc998081C313c7
+→ stakingRewardsPool: 0xcDA9A2F1f4b2783Ec62EAF9f5E3a6063f478B327
+→ liquidityPool: 0x1aeA99526321022198f19be30Ebf6a1e05280ce5
+→ foundationPool: 0x2D05455aEF38c2E4E1c9bE9c1D65F98228774eb4
+→ reservePool: 0x7e6D2d56e803cB1Dc6d3114f6e5DD7c02fD91EC9
+→ PrivateSale seeded: 145200000000.0 DXZ
+→ PublicSale seeded: 96800000000.0 DXZ
+→ Team&Advisors seeded: 181500000000.0 DXZ
+→ Ecosystem seeded: 121000000000.0 DXZ
+→ Community Growth seeded: 193600000000.0 DXZ
+→ StakingRewards seeded: 84700000000.0 DXZ
+→ Liquidity seeded: 145200000000.0 DXZ
+→ Foundation seeded: 181500000000.0 DXZ
+→ Reserve seeded: 60500000000.0 DXZ
+✅ deployment/addresses.json written
+root@dxz-chain:/var/www/dexbros/github/zkevm-contracts#
+
